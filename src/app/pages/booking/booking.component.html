@@ -1,0 +1,30 @@
+<section id="booking-form" class="my-4">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-4">
+        <div class="row">
+          <div class="col-12 text-end">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2907/2907720.png"
+              alt="Driver Icon"
+              class="driver"
+            />
+          </div>
+        </div>
+        <div class="row">
+          @for (seatNo of seatArray; track $index) { @if
+          (checkIfSeatBooked(seatNo) != -1) {
+          <div class="col-3">
+            <div class="seat reserved">{{ seatNo }}</div>
+          </div>
+          } @else {
+          <div class="col-3">
+            <div class="seat available">{{ seatNo }}</div>
+          </div>
+          } }
+        </div>
+      </div>
+      <div class="col-8"></div>
+    </div>
+  </div>
+</section>

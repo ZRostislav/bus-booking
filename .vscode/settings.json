@@ -1,0 +1,9 @@
+{
+  "editor.fontFamily": "Consolas, 'Courier New', monospace",
+  "debug.javascript.debugByLinkOptions": "on",
+  "json.schemas": [],
+  "launch": {
+    "configurations": [],
+    "compounds": []
+  }
+}
